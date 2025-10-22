@@ -1,3 +1,5 @@
+![Banner](banner.png)
+
 # AI Model Selector Batch Script 🚀
 
 Welcome to the **AI Model Selection Menu v1.9!** 🎉  
@@ -87,7 +89,7 @@ This batch script makes it simple to browse, update, and run AI models from **Ol
 2. **Navigate to Script 📍**  
    Use:
    ```
-   cd path\to\your\folder
+   cd path	o\yourolder
    ```
    (e.g., `cd C:\AI_Tools`)
 
