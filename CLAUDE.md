@@ -1103,3 +1103,9 @@ Model Execution Options:
 *Documentation Version: 1.0*
 *Project Version: 1.9*
 *Created with: Claude Code (https://claude.com/claude-code)*
+
+## Framework Versions
+
+- No major frameworks detected in this project
+- This may be a utility script, documentation project, or uses custom dependencies
+
