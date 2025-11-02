@@ -123,9 +123,9 @@ Includes 60+ models for general conversation and text generation:
 
 #### Specialized Models (Category 7)
 11 vision and multimodal models:
-- **LLaVA Series**: llava, llava-phi3, llava-llama3, llama3.2-vision
-- **Vision**: moondream, bakllava, granite3.2-vision, minicpm-v
-- **Advanced**: qwen2.5vl, mistral-small3.1
+- **qwen3-vl Series**: qwen3-vl, qwen3-vl-phi3, qwen3-vl-llama3, qwen3-vl
+- **Vision**: qwen3-vl, bakqwen3-vl, granite3.2-vision, qwen3-vl
+- **Advanced**: qwen3-vl, mistral-small3.1
 - **Function Calling**: nexusraven
 
 ### 2. Management Functions
@@ -467,10 +467,10 @@ Press any key to return
 - Function calling and tool use
 
 **Vision Models**:
-- **llava-llama3** - 8B vision benchmark leader
-- **llama3.2-vision** - 11B and 90B image reasoning
-- **qwen2.5vl** - Flagship vision-language model
-- **moondream** - 1.8B efficient edge vision
+- **qwen3-vl-llama3** - 8B vision benchmark leader
+- **qwen3-vl** - 11B and 90B image reasoning
+- **qwen3-vl** - Flagship vision-language model
+- **qwen3-vl** - 1.8B efficient edge vision
 
 **Function Calling**:
 - **nexusraven** - 13B function calling specialist
@@ -750,7 +750,7 @@ llama2-uncensored, dolphin-mixtral, dolphin-phi, dolphin-llama3, dolphin3, dolph
 medllama2, meditron
 
 **Specialized** (11 models):
-llava, llava-phi3, llava-llama3, moondream, bakllava, nexusraven, granite3.2-vision, llama3.2-vision, qwen2.5vl, minicpm-v, mistral-small
+qwen3-vl, qwen3-vl-phi3, qwen3-vl-llama3, qwen3-vl, bakqwen3-vl, nexusraven, granite3.2-vision, qwen3-vl, qwen3-vl, qwen3-vl, mistral-small
 
 **Additional** (30+ models):
 yarn-llama2, yarn-mistral, orca2, orca-mini, open-orca-platypus2, vicuna, firefunction-v2, llama3-groq-tool-use, nous-hermes2-mixtral, llama2-chinese, aya, glm4, llama3-chatqa, llama3-gradient, internlm2, exaone3.5, exaone-deep, shieldgemma, llama-guard3, reader-lm, duckdb-nsql, tulu3, nuextract, bespoke-minicheck, sailor2, marco-o1, codeup, stable-beluga, codeqwen
