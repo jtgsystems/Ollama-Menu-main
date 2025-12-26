@@ -1099,13 +1099,41 @@ Model Execution Options:
 
 ---
 
-*Last Updated: 2025-10-26*
-*Documentation Version: 1.0*
+---
+
+## Summary of Key Differences vs Ollama-Menu
+
+This repository (Ollama-Menu-main) is the enhanced version with:
+- **230+ models** (vs 100+ in Ollama-Menu)
+- **227 models** in update list (vs 189 in Ollama-Menu)
+- Same 7 category structure
+- More recent model additions (2025 models)
+
+Recent model additions in this version include:
+- **Latest LLMs**: llama4, qwen3, qwq, deepseek-v3, dolphin3
+- **Reasoning Models**: phi4-reasoning, phi4-mini-reasoning, marco-o1
+- **Specialized**: granite3.3, exaone-deep, exaone3.5, sailor2
+- **Multilingual**: aya, glm4, command-r7b-arabic
+- **Vision**: qwen2.5vl, minicpm-v
+- **Tools**: reader-lm, duckdb-nsql, nuextract, bespoke-minicheck
+- **Safety**: shieldgemma, llama-guard3, granite3-guardian
+
+This is the more comprehensive and up-to-date repository for users wanting access to the latest Ollama models.
+
+---
+
+*Last Updated: 2025-12-26*
+*Documentation Version: 1.1*
 *Project Version: 1.9*
+*Repository: https://github.com/jtgsystems/Ollama-Menu-main*
+*Branch: master*
+*Remote: git@github.com:jtgsystems/Ollama-Menu-main.git*
 *Created with: Claude Code (https://claude.com/claude-code)*
 
 ## Framework Versions
 
-- No major frameworks detected in this project
-- This may be a utility script, documentation project, or uses custom dependencies
+- **Windows Batch Script**: Native CMD interpreter
+- **Ollama**: Latest version (user-installed)
+- **Optional INTERPRETER**: Open Interpreter (user-installed)
+- No additional frameworks required
 
