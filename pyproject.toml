@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ollama-menu"
+version = "4.0.0"
+description = "Cross-Platform AI Model Selector, Hardware VRAM Optimizer, and Interactive Launcher for 350+ Ollama LLMs"
+readme = "README.md"
+authors = [{ name = "JTG Systems", email = "jtgsystems@gmail.com" }]
+license = { text = "MIT" }
+keywords = [
+    "ollama", "llm", "ai", "deepseek", "deepseek-r1", "llama3",
+    "qwen", "mistral", "gemma", "reasoning", "coding", "vision",
+    "hardware-vram", "jtgsystems"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+dependencies = [
+    "rich>=13.0.0"
+]
+
+[project.urls]
+Homepage = "https://jtgsystems.com"
+Repository = "https://github.com/jtgsystems/Ollama-Menu"
+"Bug Tracker" = "https://github.com/jtgsystems/Ollama-Menu/issues"
+
+[project.scripts]
+ollama-menu = "ollama_menu.cli:main"
+om = "ollama_menu.cli:main"

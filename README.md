@@ -1,181 +1,90 @@
-![Banner](banner.png)
+# 🦙 Ollama-Menu (v4.0 SOTA 2026)
 
-# AI Model Selector Batch Script 🚀
+<div align="center">
 
-Welcome to the **AI Model Selection Menu v1.9!** 🎉  
-This batch script makes it simple to browse, update, and run AI models from **Ollama** on your Windows machine. Whether you're a **coder** 💻, **researcher** 🔬, or just exploring AI, this tool has you covered with a clean, menu-driven interface.
+![Ollama Menu Banner](banner.png)
 
-**Developed by**: Joint Technology Group Inc. 🌐  
-🔗 [JTGSYSTEMS.COM](https://jtgsystems.com)
+**The Ultimate Cross-Platform AI Model Selector, Hardware VRAM Optimizer & Interactive Launcher for Ollama**
 
----
+[![License: MIT](https://img.shields.io/badge/License-MIT-cyan.svg)](https://opensource.org/licenses/MIT)
+[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-purple.svg)]()
+[![Ollama](https://img.shields.io/badge/Ollama-Local%20LLM%20Launcher-blue.svg)](https://ollama.com)
+[![Created By](https://img.shields.io/badge/Created%20By-JTG%20Systems-gold.svg)](https://jtgsystems.com)
 
-## 🌟 Features
+*Browse, filter, optimize, and launch over **350+ local open-source LLMs** with real-time VRAM fit evaluation and 1-click execution.*
 
-- **Interactive Menu 🖱️**  
-  Choose from categories like General Purpose, Code-Specialized, and more with simple number inputs.
-
-- **Model Categories 📚**  
-  - General Purpose Models 🌍  
-  - Code-Specialized Models 💻  
-  - Math and Reasoning Models ➕  
-  - Embedding Models 📊  
-  - Uncensored Models 🔓  
-  - Medical Models 🩺  
-  - Specialized Models (e.g., Vision) 📸
-
-- **Run Options ⚙️**  
-  - Launch models directly with `ollama run` 🚀  
-  - Use an INTERPRETER for advanced setups 🛠️
-
-- **Model Management 🔄**  
-  - List installed models with `ollama list` 📋  
-  - Update all models with one command 🔍
-
-- **English-Only Models 🇺🇸**  
-  Optimized for English-language tasks.
-
-- **User-Friendly 😊**  
-  Clear prompts, error handling, and polished interface.
+</div>
 
 ---
 
-## 📋 Requirements
+## 🌟 New in v4.0 (2026 SOTA Release)
 
-- **Windows OS 🖥️**  
-  Compatible with Windows 7, 10, or 11.
-
-- **Ollama Installed 🧠**  
-  Download and install from [ollama.com](https://ollama.com). Ensure it is added to your system `PATH`.
-
-- **Command Prompt Access ⌨️**  
-  Run the script using Command Prompt (`cmd`).
-
-- **Optional: INTERPRETER 🔧**  
-  Required for advanced run options. Must support:  
-  ```
-  interpreter --model ollama/[modelname]
-  ```
-
-- **Hardware Requirements 💪**  
-  - Minimum **8 GB RAM** for 7B models  
-  - **16 GB RAM** for 13B models  
-  - **32 GB RAM** for 33B and larger models  
+- 🧠 **Deep Reasoning Models**: Integrated `deepseek-r1` (1.5B to 70B), `phi4:14b`, and `marco-o1`.
+- 💻 **Elite Coding Models**: Integrated `qwen2.5-coder` (7B, 14B, 32B), `deepseek-coder-v2:16b`, and `granite-code:8b`.
+- 🚀 **Flagship Open Weights**: Integrated `llama3.3:70b`, `llama3.2` (1B/3B), `qwen2.5` (7B/14B/32B/72B), `gemma2`, and `mistral-small`.
+- 👁️ **Vision & Multimodal**: Integrated `llama3.2-vision` (11B/90B), `minicpm-v:8b`, and `llava:13b`.
+- ⚡ **Cross-Platform**: Full native support for **Linux**, **macOS**, and **Windows** with Rich TUI, Bash, and Batch launchers.
+- 🎛️ **Hardware VRAM Fit Evaluation**: Real-time detection of NVIDIA VRAM, AMD ROCm VRAM, Apple Unified Memory, and System RAM to prevent out-of-memory crashes before launching.
 
 ---
 
-## 🛠️ Installation
+## 🚀 Quick Start & Installation
 
-1. **Download the Script 📥**  
-   Copy the batch script from the repository or save it as `model_selector.bat`.
+### Option 1: Global CLI / Python (Linux, macOS, Windows)
+```bash
+git clone https://github.com/jtgsystems/Ollama-Menu.git
+cd Ollama-Menu
+pip install -e .
 
-2. **Place in a Directory 📂**  
-   Save it in a folder (e.g., `C:\AI_Tools`).
+# Launch Interactive Menu:
+ollama-menu
+# or short alias:
+om
+```
 
-3. **Ensure Ollama is Ready ✅**  
-   Install Ollama and verify it works by running:
-   ```
-   ollama --version
-   ```
-   in Command Prompt.
+### Option 2: Linux & macOS One-Liner
+```bash
+./ollama-menu.sh
+```
 
----
-
-## 🚀 How to Use
-
-1. **Open Command Prompt 🖥️**  
-   Press `Win + R`, type `cmd`, and hit Enter.
-
-2. **Navigate to Script 📍**  
-   Use:
-   ```
-   cd path	o\yourolder
-   ```
-   (e.g., `cd C:\AI_Tools`)
-
-3. **Run the Script ▶️**  
-   ```
-   model_selector.bat
-   ```
-
-4. **Explore the Menu 🧭**  
-   **Main Menu** – Enter a number (1–10) to select a category or action:
-   ```
-   1: General Purpose Models 🌟  
-   2: Code-Specialized Models 💻  
-   3: Math and Reasoning Models ➗  
-   4: Embedding Models 📈  
-   5: Uncensored Models 🔓  
-   6: Medical Models 🩺  
-   7: Specialized Models 📸  
-   8: Update Models 🔄  
-   9: List Installed Models 📋  
-   10: Exit 🚪
-   ```
-
-   **Submenu** – Choose a model by number, then select:
-   ```
-   1: Run with Ollama (ollama run [modelname]) 🚀  
-   2: Run with INTERPRETER (interpreter --model ollama/[modelname]) 🛠️  
-   3: Back to previous menu ⬅️
-   ```
-
-   **Example 🌈**:
-   ```
-   Type 1 to enter General Purpose Models  
-   Type 1 again to select llama3  
-   Type 1 to run `ollama run llama3`  
-   Watch the magic happen! ✨
-   ```
+### Option 3: Windows Batch Launcher
+Double-click `ollama-menu.bat` or run:
+```cmd
+ollama-menu.bat
+```
 
 ---
 
-## 🐛 Troubleshooting
+## ⌨️ CLI Commands
 
-- **Script Shows Weird Output (e.g., repeating 's's) 😕**  
-  - Ensure you’re using the latest script version.  
-  - Check for typos in the `.bat` file.
+```bash
+# Launch interactive categorized model browser
+ollama-menu
 
-- **Ollama Command Not Found 🚫**  
-  - Verify Ollama is installed and in your `PATH`  
-  - Use:
-    ```
-    echo %PATH%
-    ```
-    to check  
-  - Reinstall Ollama if needed.
+# Search model directory by keyword (e.g., reasoning, coder, vision, 14b)
+ollama-menu search reasoning
 
-- **Model Fails to Run ⚠️**  
-  - Confirm your hardware meets the model’s requirements (RAM)  
-  - Try updating models (option 8)
+# Run any model directly
+ollama-menu run deepseek-r1:8b
 
-- **INTERPRETER Errors 🛑**  
-  - Ensure INTERPRETER is installed and supports the syntax  
-  - Use option 1 (Ollama) as a fallback
+# List installed local models
+ollama-menu list
+
+# Batch update all installed local models
+ollama-menu update
+```
 
 ---
 
-## 🙌 Credits
+## 📊 Hardware Sizing & VRAM Recommendations
 
-This awesome script was created by **Joint Technology Group Inc.** 🎉  
-Visit us at: 🌐 [JTGSYSTEMS.COM](https://jtgsystems.com)  
-
-We’d love to hear your feedback!  
-Drop us a line or contribute to make this tool even better. 💬
-
----
-
-## 📜 License
-
-This project is **open-source** and free to use under the **MIT License**.  
-Feel free to modify and share! 🗳️
-
----
-
-## 🌈 Happy AI Exploring!
-
-Dive into the world of AI with ease and style.  
-Run those models, write some code, or explore new ideas — this script is your gateway to AI awesomeness! 🎇
+| Model Class | Parameters | Minimum VRAM (Q4) | Target Hardware Profile |
+| :--- | :--- | :--- | :--- |
+| **Edge / Ultra-Light** | `1B - 3B` | **1.5 GB - 3 GB** | Laptops, Raspberry Pi 5, CPU-only systems |
+| **Daily Driver** | `7B - 9B` | **5.5 GB - 7 GB** | RTX 3060/4060 (8GB VRAM), Apple M1/M2/M3 (16GB) |
+| **High Intelligence** | `14B - 16B` | **10 GB - 12 GB** | RTX 3080/4070 (12GB VRAM), Apple M2/M3 (24GB) |
+| **Heavy Reasoning / Code** | `27B - 35B` | **18 GB - 22 GB** | RTX 3090/4090 (24GB VRAM), Apple Studio (32GB+) |
+| **Frontier Open-Weight** | `70B - 72B` | **42 GB - 48 GB** | Dual RTX 3090/4090, Apple Studio 64GB/128GB |
 
 ---
 
@@ -196,3 +105,20 @@ Run those models, write some code, or explore new ideas — this script is your 
 
 </div>
 
+---
+
+## 🔍 SEO Keyword Cloud & Search Tags
+
+<details>
+<summary><strong>Expand Search Engine Index & Compatibility Keywords</strong></summary>
+
+### 🏷️ Search Queries & Tags:
+`ollama menu` · `ollama model selector` · `ollama batch script windows` · `ollama linux menu launcher` · `local ai model launcher` · `deepseek-r1 ollama runner` · `qwen2.5-coder local setup` · `llama 3.3 70b local inference` · `ollama vram fit calculator` · `best local ai models 2026` · `run uncensored llm locally` · `medical ai model ollama` · `vision multimodal local ai` · `ollama interactive tui` · `jtgsystems ollama menu` · `python ollama model manager` · `free open source ai launcher`
+
+</details>
+
+---
+
+## 📜 License
+
+MIT License © 2026 [JTG Systems](https://jtgsystems.com).
